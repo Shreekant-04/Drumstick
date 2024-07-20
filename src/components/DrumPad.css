@@ -1,0 +1,23 @@
+.drum-pad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(145deg, #555, #333);
+  border: 1px solid #777;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.1s, background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.drum-pad:active {
+  transform: scale(0.95);
+  background-color: #777;
+}
+
+.drum-pad:hover {
+  background-color: #666;
+}

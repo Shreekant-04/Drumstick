@@ -1,0 +1,101 @@
+#controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#power-button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+#power-button.active {
+  background-color: #f00;
+}
+
+#power-button:hover {
+  background-color: #ff4500;
+}
+
+#volume-control {
+  width: 150px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: #ddd;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  border-radius: 5px;
+}
+.volume-label {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+}
+.min,
+.max {
+  position: absolute;
+  bottom: 22px;
+  font-size: 10px;
+}
+.min {
+  left: 5px;
+}
+.max {
+  right: 5px;
+}
+
+#volume-control:hover {
+  opacity: 1;
+}
+
+#volume-control::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ff6347;
+  cursor: pointer;
+}
+
+#volume-control::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ff6347;
+  cursor: pointer;
+}
+.presets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.preset-button {
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.preset-button:hover {
+  background-color: #009acd;
+}
